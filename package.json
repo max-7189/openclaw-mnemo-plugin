@@ -1,0 +1,30 @@
+{
+  "name": "openclaw-mnemo-plugin",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Per-user isolated memory plugin for OpenClaw — description-driven save/search/list/delete meta-tools plus /reflect and /forget commands.",
+  "keywords": [
+    "openclaw",
+    "plugin",
+    "memory",
+    "per-user",
+    "multi-tenant",
+    "agent",
+    "discord",
+    "telegram"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/max-7189/openclaw-mnemo-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/max-7189/openclaw-mnemo-plugin/issues"
+  },
+  "homepage": "https://github.com/max-7189/openclaw-mnemo-plugin#readme",
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "user-memory",
+  "name": "User Memory",
+  "description": "Per-user isolated memory with description-driven save/search and /reflect + /forget commands.",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "enabled": {
+        "type": "boolean",
+        "description": "Enable or disable per-user memory"
+      },
+      "baseDir": {
+        "type": "string",
+        "description": "Base directory for user memory files (default ~/.openclaw/workspace/memory/users)"
+      },
+      "promotionThreshold": {
+        "type": "number",
+        "description": "Save count at which a candidate memory is promoted to stable (default 2)"
+      }
+    }
+  },
+  "uiHints": {
+    "enabled": { "label": "Enable User Memory" },
+    "baseDir": { "label": "Storage Directory", "advanced": true },
+    "promotionThreshold": { "label": "Promotion Threshold", "advanced": true }
+  }
+}
