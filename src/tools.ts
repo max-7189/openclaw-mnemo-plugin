@@ -1,4 +1,5 @@
-import type { OpenClawPluginApi, OpenClawPluginToolContext } from "openclaw/plugin-sdk";
+import type { OpenClawPluginApi } from "openclaw/plugin-sdk";
+import type { OpenClawPluginToolContext } from "./sdk-types.js";
 import { resolveUserIdFromToolContext } from "./user-id.js";
 import {
   saveRecord, listRecords, deleteRecord, searchRecords, readRecord,

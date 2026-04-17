@@ -1,4 +1,4 @@
-import type { OpenClawPluginToolContext } from "openclaw/plugin-sdk";
+import type { OpenClawPluginToolContext } from "./sdk-types.js";
 
 function sanitize(raw: string): string {
   return raw.replace(/[^A-Za-z0-9_\-:.]/g, "_").slice(0, 128);

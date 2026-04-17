@@ -22,9 +22,28 @@
     "url": "https://github.com/max-7189/openclaw-mnemo-plugin/issues"
   },
   "homepage": "https://github.com/max-7189/openclaw-mnemo-plugin#readme",
+  "files": [
+    "index.ts",
+    "src/**/*.ts",
+    "skills/**/*.md",
+    "openclaw.plugin.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "openclaw": "^2026.4.15",
+    "typescript": "^5.4.0"
+  },
   "openclaw": {
     "extensions": [
       "./index.ts"
     ]
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

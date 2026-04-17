@@ -1,5 +1,5 @@
 import type { OpenClawPluginApi } from "openclaw/plugin-sdk";
-import type { PluginCommandContext } from "openclaw/plugin-sdk";
+import type { PluginCommandContext } from "./sdk-types.js";
 import { resolveUserIdFromCommand } from "./user-id.js";
 import { listRecords, fuzzyDelete } from "./storage.js";
 import type { UserMemoryConfig } from "./config.js";
